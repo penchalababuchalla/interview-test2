@@ -15,11 +15,13 @@ export class LoginComponent  {
   }
 
   userLogin(){
+    debugger
     if(this.name==""||this.password==""){
       this.isHide=false;
     }
+    else{
     this.router.navigateByUrl('/list?sortType=hightolow')
-
+    }
   }
 
 }

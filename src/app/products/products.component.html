@@ -1,19 +1,32 @@
-<h1>Products</h1>
-
- <select [(ngModel)]="sortBy" (change)="sortProducts()">
-    <option value="hightolow">hightolow</option>
-    <option value="lowtohigh">lowtohigh</option>
-  </select>
-
+<div class="row">
+	<div class="col-4">
+		<h1>Products</h1>
+	</div>
+	<div class="col-4 mrgin">
+		<select [(ngModel)]="sortBy" (change)="sortProducts()">
+		   <option value="hightolow">high to low</option>
+		   <option value="lowtohigh">low to high</option>
+		</select>
+	</div>
+	<div class="col-4 mrgin">
+		<a routerLink="/feedback" routerLinkActive="active">Feedback</a>
+	</div>
+</div>
 <div>
-	<div class="row" *ngFor="let product of products">
-		<div class="col-6">
-			
+	<div class="row mrgn" *ngFor="let product of products">
+		<div class="col-6 ">
+			<img src="{{product.ListImagePath + product.Images.split('|')[0]}}" class="width">
 		</div>
 		<div class="col-6">
-			Price: {{product.Price}}<br>
-			{{product.Collection}}
-			{{product.AvailableSizes}}
+			<b>Price:</b>  <span class="priceclr"> {{product.Price}}</span><br>
+			<b>Title:</b>  <span class="titleclr"> {{product.ProductTitle}}</span><br>
+			<b>Product code:</b>  {{product.ProductCode}}<br>
+			<b>Collection:</b>  {{product.Collection}}<br>
+			<b>AvailableSize:</b> <span class="titleclr"> {{product.AvailableSizes}}</span><br>
+			<b>Style name:</b>  {{product.StyleName}}<br>
+			<b>Style number:</b>  {{product.StyleNumber}}<br>
+			<b>Net Quantity:</b>  <button>{{product.NetQuantity}}</button>
 		</div>
 	</div>
 </div>
+<!-- <img src="{{product.ListImagePath + image}}" *ngFor="let image of product.Images.split('|')" class="width"> -->

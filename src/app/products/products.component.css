@@ -1,0 +1,23 @@
+h1 {
+	font-family: ittalic;
+}
+.mrgin {
+	margin-top: 20px;
+}
+.width {
+	width: 150px;
+	height: 150px;
+	border: 1px solid;
+}
+.mrgn {
+	margin-top: 30px;
+	border-bottom: 1px solid;
+	border-color: lightgray;
+}
+.priceclr {
+	color: red;
+}
+.titleclr {
+	font-size: 20px;
+}
+

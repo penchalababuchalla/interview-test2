@@ -51,7 +51,6 @@ export class ProductsComponent {
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
 
-  //In chrome and some browser scroll is given to body tag
   let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
   let max = document.documentElement.scrollHeight;
    if(pos == max )   {

@@ -5,11 +5,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.css']
 })
-export class FeedbackComponent implements OnInit {
+export class FeedbackComponent {
+
+  isHide=true;
+  name="";
+  email="";
+  phoneNo="";
+  feedback="";
 
   constructor() { }
 
-  ngOnInit(): void {
+  addFeedback(){
+    if(this.name==""||this.email==""||this.phoneNo==""||this.feedback==""){
+      this.isHide=false;
+    }
   }
 
 }

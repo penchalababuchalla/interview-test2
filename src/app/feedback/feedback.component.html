@@ -1,1 +1,9 @@
-<p>feedback works!</p>
+<div class="feedbackwidth">
+	<h3>feedback</h3>
+	<input type="text" name="name" [(ngModel)]="name"placeholder="name....."><br><br>
+	<input type="text" name="emali" [(ngModel)]="email" placeholder="email....."><br><br>
+	<input type="text" name="phoneNo" [(ngModel)]="phoneNo" placeholder="phoneNo....."><br><br>
+	<input type="text" name="feedback" [(ngModel)]="feedback" placeholder="write Here....." class="comment">
+	<p [hidden]="isHide">please enter a valid details</p>
+	<button (click)="addFeedback()">submit</button>
+</div>
