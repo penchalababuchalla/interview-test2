@@ -1,0 +1,8 @@
+<div class="border">
+	<div class="login">
+		<input type="text" name="name" [(ngModel)]="name"placeholder="userName...."><br><br>
+		<input type="text" name="password" [(ngModel)]="password"placeholder="password...."><br><br>
+		<p [hidden]="isHide">please enter a valid details</p>
+		<button (click)="userLogin()">login</button>
+	</div>
+</div>

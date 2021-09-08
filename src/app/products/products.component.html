@@ -1,0 +1,19 @@
+<h1>Products</h1>
+
+ <select [(ngModel)]="sortBy" (change)="sortProducts()">
+    <option value="hightolow">hightolow</option>
+    <option value="lowtohigh">lowtohigh</option>
+  </select>
+
+<div>
+	<div class="row" *ngFor="let product of products">
+		<div class="col-6">
+			
+		</div>
+		<div class="col-6">
+			Price: {{product.Price}}<br>
+			{{product.Collection}}
+			{{product.AvailableSizes}}
+		</div>
+	</div>
+</div>

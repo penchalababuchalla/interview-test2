@@ -1,0 +1,25 @@
+.border {
+	margin-left: 33%;
+    margin-right: 26%;
+    margin-top: 20px;
+    padding-left: 32px;
+    padding-bottom: 20px;
+	box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login {
+
+	margin-top: 50px;
+
+}
+input {
+	border-color: #ac0c0c;
+	border-radius: 5px;
+}
+button {
+	margin-left: 70px;
+	border-radius: 20px;
+	border-color: green;
+}
+p {
+	color: red;
+}
